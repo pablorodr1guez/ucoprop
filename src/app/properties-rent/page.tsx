@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import Pagination from "@/components/pagination/pagination"
 import { Home, BedDouble, Bath, Square } from 'lucide-react'
-import { fetchFeaturedProperties } from '../services/propertiesService'
+import { fetchFeaturedProperties, fetchFeaturedPropertiesRent } from '../services/propertiesService'
 
 export default function PropertyListPage() {
   const [properties, setProperties] = useState<any[]>([]) // Estado para almacenar las propiedades
@@ -18,7 +18,7 @@ export default function PropertyListPage() {
   useEffect(() => {
     const getProperties = async () => {
       try {
-        const fetchedProperties = await fetchFeaturedProperties();
+        const fetchedProperties = await fetchFeaturedPropertiesRent();
         setProperties(fetchedProperties); // Actualizar el estado con las propiedades obtenidas
       } catch (error) {
         console.error('Error fetching properties:', error);

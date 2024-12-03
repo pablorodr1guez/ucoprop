@@ -9,12 +9,10 @@ import { Home, MapPin, BedDouble, Bath, Square, Calendar, Phone, Mail } from "lu
 import { fetchFeaturedProperties } from "@/app/services/propertiesService";
 import Link from "next/link";
 
-
-
 export default function PropertyDetail() {
   const { id } = useParams(); // Obtener el ID de la propiedad desde la URL
   const properties = fetchFeaturedProperties(); // Servicio para obtener propiedades
-  const property = properties.find((prop) => prop.id === Number(id)); // Buscar propiedad por ID
+  const property = properties.find((prop) => prop.id === id); // Buscar propiedad por ID
 
   const [mainImage, setMainImage] = useState(property?.imagesurls[0] || "/placeholder.svg");
 
@@ -28,17 +26,23 @@ export default function PropertyDetail() {
 
   return (
     <div className="min-h-screen bg-background">
-      <header className="border-b">
-      <div className="container mx-auto px-4 py-4 flex items-center">
-        {/* Envuelve el logo y el título con el componente Link */}
+     <header className="border-b">
+        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link href="/" passHref>
           <div className="flex items-center space-x-2 cursor-pointer">
             <Home className="h-8 w-8 text-primary mr-2" />
             <h1 className="text-2xl font-bold">UcoProp</h1>
           </div>
         </Link>
-      </div>
-    </header>
+          <nav className="hidden md:flex space-x-4">
+          <nav className="hidden md:flex space-x-4">
+          <Link href={`/contact-me`}>
+            <Button variant="ghost" className="font-bold bg-primary text-white">Publica tu propiedad</Button>
+          </Link>
+          </nav>
+          </nav>
+        </div>
+      </header>     
 
       <main className="container mx-auto px-4 py-8">
         <h2 className="text-3xl font-bold mb-6">{property.title}</h2>
@@ -49,7 +53,7 @@ export default function PropertyDetail() {
               <img
                 src={mainImage}
                 alt="Imagen principal de la propiedad"
-                className="w-full h-[400px] object-cover rounded-lg"
+                className="w-full max-h-[500px] object-contain rounded-lg"
               />
             </div>
             <div className="flex space-x-2 mb-6 overflow-x-auto">
@@ -104,11 +108,7 @@ export default function PropertyDetail() {
                       <MapPin className="mr-2" />
                       <span>{property.location}</span>
                     </div>
-                    <img
-                      src="/placeholder.svg?height=300&width=600&text=Mapa"
-                      alt="Mapa de ubicación"
-                      className="w-full h-[300px] object-cover rounded"
-                    />
+                  
                   </CardContent>
                 </Card>
               </TabsContent>
@@ -119,10 +119,19 @@ export default function PropertyDetail() {
             <Card className="mb-6">
               <CardContent className="pt-6">
                 <h3 className="text-2xl font-bold mb-4">{property.price}</h3>
-                <Button className="w-full mb-2">Contactar al vendedor</Button>
-                <Button variant="outline" className="w-full">
-                  Agendar visita
-                </Button>
+                <Button
+                  className="w-full mb-2"
+                  onClick={() => {
+                    const whatsappNumber = property.contact.phone.replace(/\D/g, ""); // Asegúrate de limpiar el número de teléfono
+                    const message = encodeURIComponent(
+                      `Hola, estoy interesado en la propiedad "${property.title}" publicada en UcoProp.`
+                    );
+                    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
+                    window.open(whatsappUrl, "_blank");
+                  }}
+                >
+                Contactar al vendedor
+              </Button>
               </CardContent>
             </Card>
 
