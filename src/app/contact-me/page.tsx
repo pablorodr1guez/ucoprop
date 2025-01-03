@@ -62,9 +62,9 @@ export default function ContactMePage() {
               <CardContent>
                 <ul className="list-disc list-inside space-y-2">
                   <li>Amplia visibilidad en el Valle de Uco</li>
-                  <li>Asesoramiento personalizado</li>
                   <li>Fotografía profesional de tu propiedad</li>
-                  <li>Gestión de visitas y negociaciones</li>
+                  <li>Marketing en redes sociales</li>
+                  <li>Asesoramiento personalizado</li>
                 </ul>
               </CardContent>
             </Card>

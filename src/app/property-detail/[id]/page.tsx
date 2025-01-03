@@ -154,7 +154,7 @@ export default function PropertyDetail() {
 
       <footer className="bg-muted mt-12 py-6">
         <div className="container mx-auto px-4 text-center text-muted-foreground">
-          <p>&copy; 2024 InmobiliariaApp. Todos los derechos reservados.</p>
+          <p>&copy; 2024 UcoProp. Todos los derechos reservados.</p>
         </div>
       </footer>
     </div>
