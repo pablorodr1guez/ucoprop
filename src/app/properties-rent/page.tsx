@@ -1,13 +1,12 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import Pagination from "@/components/pagination/pagination"
 import { Home, BedDouble, Bath, Square } from 'lucide-react'
-import { fetchFeaturedProperties, fetchFeaturedPropertiesRent } from '../services/propertiesService'
+import { fetchFeaturedPropertiesRent } from '../services/propertiesService'
 
 export default function PropertyListPage() {
   const [properties, setProperties] = useState<any[]>([]) // Estado para almacenar las propiedades
