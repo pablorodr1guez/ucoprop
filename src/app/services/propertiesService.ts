@@ -35,15 +35,15 @@ const propertiesSale: Property[] = [
 
 💰 Precio: $110.000 USD`,
     imagesurls: [
-      "https://i.postimg.cc/xjBkPNqc/Whats-App-Image-2024-11-26-at-12-56-01.jpg",
-      "https://i.postimg.cc/Kc1kLDG6/Whats-App-Image-2024-11-26-at-12-14-49-1.jpg",
-      "https://i.postimg.cc/sXNzsWbS/Whats-App-Image-2024-11-26-at-12-14-49-2.jpg",
-      "https://i.postimg.cc/K8DRF9fM/Whats-App-Image-2024-11-26-at-12-14-51.jpg",
-      "https://i.postimg.cc/L6fJQ4Zv/Whats-App-Image-2024-11-26-at-12-14-51-2.jpg",
-      "https://i.postimg.cc/Qd3H2LQD/Whats-App-Image-2024-11-26-at-12-14-51-3.jpg"
+      "https://lh3.googleusercontent.com/pw/AP1GczOKKgAXDTZYKNxQMSWBOh79Dx3jThz3DFcKcrRMHq_-CrYkO2M3u6wN4Zj_kl0AKpdoGei6Wu8oDL2oBvzVMCxJhJdRKFtPQs7SeAJQVqaZLWZq9-ExVu5QicDrioCqGpbsLlOewNJNSD_CiKebeY22=w1080-h1080-s-no-gm?authuser=0",
+      "https://lh3.googleusercontent.com/pw/AP1GczOUXLG2ahEQERRybVM0xz5msO_H7Nerh8eymT5_C6tWzTgwJFLsZFWOACBRBh48njYAxbPc8itKFW0mOBvq-0pXV2bQ2AR8FJZw4UEZH1NaLx536nhrPzVqT20AlHVEMl_PLfDbyIVxoLcWIriZY3N4=w2880-h1620-s-no-gm",
+      "https://lh3.googleusercontent.com/pw/AP1GczM8E2fShwCEoAPuC_kZWCxwi4aTb53TQ8fVT1k3SX2zbyhJ4rT2WdcH5HLlAcui6hT0MFbXIAwvfignWudniVJB9QJRi_RhICG4qdk37Qy3az4wwv8g6iN40olYndBqrUcV3l2mFhqP59xDQ9ACppdA=w2880-h1620-s-no-gm?authuser=0",
+      "https://lh3.googleusercontent.com/pw/AP1GczN4EmUjbzl0fBsX0GtaZdetBj6aPw3NoEIoDcYZxE9gge_HEVBEnIHlguHChMuBZOCXJlzX9RWKyPdYHgFUC5ItCVubU2saY5bhIQIOTL4OwnB3Zi1b1GHjF3MFM5CiZwwVWwr9YE0viyFwrH96csyr=w914-h1624-s-no-gm?authuser=0",
+      "https://lh3.googleusercontent.com/pw/AP1GczOnf9dVZpaDG8BOMtkMJlMRsy7pwn5l8tpWcE_m14JNJVRRc0OrB5NM1aG7wDhy0Cr47Yw6HIwlIfmgBRaPL5CKZtnM2Sb1_KQDqO-sDfTegFG56tyeLDpY1fdfjrq-Jbij-d-L1YCEUMbrA0QQ1ebR=w914-h1624-s-no-gm?authuser=0",
+      "https://lh3.googleusercontent.com/pw/AP1GczP_wsIqf-xsjY0PByEuBRcXxYoQN2xl6LL1Zf_9i2GDchRUWYinEENQKkHrrrjB8zyHGjstVYS8F9neozuDnEC2jz-W3ra7eDC48OHAhyGrwys3TOk1UcF_JlJRWpRjRwekI5V5XUguuzD0H9X8C2Fi=w914-h1624-s-no-gm?authuser=0"
       
     ],
-    mainimage: "https://i.postimg.cc/LhdMZp98/Whats-App-Image-2024-11-26-at-12-14-49.jpg",
+    mainimage: "https://lh3.googleusercontent.com/pw/AP1GczOUXLG2ahEQERRybVM0xz5msO_H7Nerh8eymT5_C6tWzTgwJFLsZFWOACBRBh48njYAxbPc8itKFW0mOBvq-0pXV2bQ2AR8FJZw4UEZH1NaLx536nhrPzVqT20AlHVEMl_PLfDbyIVxoLcWIriZY3N4=w2880-h1620-s-no-gm",
     bedrooms: 2,
     bathrooms: 1,
     area: 220,
